@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block description %}This is my description{% endblock %}
+{% block title%}My Page{% endblock %}
+{% block keywoards %}color combination, undertone, bodytype{% endblock %}
+{% block css %}{% static "styling/home.css" %}{% endblock %}
+
+{% block body %}
+    {% include "includes/nav.html" %}
+
+    <main id="img-cont">
+       
+    </main> 
+
+    <a  href="{% url 'signup'%}">Signup</a>
+{% endblock %}
